@@ -1,6 +1,7 @@
 # 2D Signals and Fourier Transforms (Digital Image Processing)
 
 ## 📌 Project Overview
+<img width="1356" height="2995" alt="image" src="https://github.com/user-attachments/assets/2262f635-99f9-452d-8ab7-aedb30e69910" />
 
 This project explores fundamental **2D signals** and their corresponding **Fourier Transforms**, based on concepts from _Digital Image Processing (Gonzalez & Woods)_.
 
