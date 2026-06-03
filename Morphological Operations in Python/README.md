@@ -13,6 +13,11 @@ The project is designed for:
 - Google Colab execution
 - MATLAB-to-Python translation practice
 
+<img width="5184" height="3456" alt="snowflakes" src="https://github.com/user-attachments/assets/a4276368-c109-474d-9cc6-cb740502d342" />
+<img width="256" height="256" alt="circles" src="https://github.com/user-attachments/assets/efd7a2f5-58e5-4c1b-ae13-85217943154c" />
+[cameraman.tif](https://github.com/user-attachments/files/28531212/cameraman.tif)
+<img width="256" height="254" alt="blobs" src="https://github.com/user-attachments/assets/45aa801e-9b53-4dcc-9fde-1aa00ac7778c" />
+
 ---
 
 # Implemented Operations
