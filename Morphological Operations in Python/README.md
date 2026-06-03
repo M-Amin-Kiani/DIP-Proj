@@ -51,9 +51,6 @@ Applications:
 - Shape analysis
 - Boundary smoothing
 
-<img width="2379" height="1890" alt="opening_results" src="https://github.com/user-attachments/assets/5d7f1398-a5fc-4d7c-bb1c-51300aef2f20" />
-
-
 These operations use a Structuring Element (Kernel).
 
 Examples:
@@ -87,6 +84,10 @@ The project applies dilation using:
 
 Three different random runs are used because random pixels are generated.
 
+<img width="3580" height="804" alt="dilation_run_42" src="https://github.com/user-attachments/assets/0f399866-7f1c-4af2-936c-c8bf311302d5" />
+<img width="3580" height="804" alt="dilation_run_7" src="https://github.com/user-attachments/assets/05715c67-b33d-428a-86ca-0a524ca7b4f1" />
+<img width="3580" height="804" alt="dilation_run_2025" src="https://github.com/user-attachments/assets/04f82d7d-77cf-4109-9353-145d31a805ef" />
+
 ---
 
 # 2. Erosion
@@ -100,6 +101,8 @@ Applications:
 - Removing small noise
 - Separating connected objects
 - Boundary extraction
+
+<img width="3580" height="804" alt="erosion_results" src="https://github.com/user-attachments/assets/5837146d-dc06-4edc-b700-f17481be4237" />
 
 ---
 
@@ -120,6 +123,8 @@ Experiments:
 - blobs image
 - snowflakes image
 
+<img width="2379" height="1890" alt="opening_results" src="https://github.com/user-attachments/assets/5d7f1398-a5fc-4d7c-bb1c-51300aef2f20" />
+
 ---
 
 # 4. Closing
@@ -136,6 +141,8 @@ Applications:
 
 The circles image is processed using a disk structuring element.
 
+<img width="1953" height="1010" alt="closing_results" src="https://github.com/user-attachments/assets/76f5458a-d28a-40ae-bf63-57f85d33438d" />
+
 ---
 
 # 5. Hit-or-Miss Transform
@@ -149,6 +156,8 @@ Applications:
 - Pattern recognition
 - Template matching
 - Skeleton analysis
+
+<img width="1676" height="778" alt="hitmiss_results" src="https://github.com/user-attachments/assets/818bc7a2-4a9f-457d-9880-9b3c21dc09d4" />
 
 ---
 
