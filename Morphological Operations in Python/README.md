@@ -246,6 +246,8 @@ This project helps students understand:
 2. OpenCV Documentation
 3. Scikit-image Documentation
 
+<img width="524" height="840" alt="Morph Ops table" src="https://github.com/user-attachments/assets/a9464e22-38dc-482d-9da9-ff95cd68b7f9" />
+
 ---
 
 # Author
