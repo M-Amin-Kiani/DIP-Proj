@@ -13,7 +13,7 @@ The project is designed for:
 - Google Colab execution
 - MATLAB-to-Python translation practice
 
-<img width="5184" height="3456" alt="snowflakes" src="https://github.com/user-attachments/assets/a4276368-c109-474d-9cc6-cb740502d342" />
+<img width="2565" height="2616" alt="textural_segmentation" src="https://github.com/user-attachments/assets/3abfdc73-e777-4b4e-8f89-54e1db75d1ce" />
 
 ---
 
