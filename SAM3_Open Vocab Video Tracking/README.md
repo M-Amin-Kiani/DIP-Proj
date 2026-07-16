@@ -54,7 +54,6 @@ output.mp4
 output.gif
 trajectory.csv
 trajectory.png
-statistics.txt
 ```
 
 ---
