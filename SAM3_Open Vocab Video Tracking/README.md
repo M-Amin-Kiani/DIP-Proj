@@ -1,68 +1,276 @@
-# گزارش پروژه: ردیابی ویدئویی با واژگان باز با SAM 3
+# 🎯 Open Vocabulary Video Tracking using SAM3
 
-## هدف پروژه
-هدف این پروژه پیاده‌سازی یک پایپ‌لاین ردیابی ویدئویی مبتنی بر متن با **Segment Anything Model 3 (SAM 3)** است.  
-در این پایپ‌لاین، کاربر یک عبارت متنی مثل `football`, `person`, `car` یا هر noun phrase دیگر را به عنوان پرامپت وارد می‌کند، مدل روی فریم ابتدایی ماسک/کادر هدف را پیدا می‌کند، و سپس در سراسر ویدئو آن هدف را track می‌کند.
+> Final Project for Digital Image Processing (M.Sc. Artificial Intelligence)
 
-خروجی نهایی پروژه شامل موارد زیر است:
-1. ویدئوی رندرشده با ماسک، کادر محصورکننده و مسیر حرکت هدف،
-2. فایل GIF یا MP4 کوتاه،
-3. نمودار دوبعدی مسیر حرکت مرکز جرم/سنترُوید هدف بر حسب زمان،
-4. نوت‌بوک Colab و کد قابل اجرا.
+---
 
-## ایده روش
-روش پیشنهادی از API رسمی SAM 3 استفاده می‌کند:
-- `start_session` برای باز کردن سشن ویدئو،
-- `add_prompt` برای اعمال prompt متنی روی فریم اول یا هر فریم دلخواه،
-- `propagate_in_video` برای انتشار/ردیابی در فریم‌های بعدی.
+## Overview
 
-### منطق پردازش
-1. ویدئو در Colab بارگذاری می‌شود.
-2. مدل SAM 3 Video Predictor ساخته می‌شود.
-3. یک prompt متنی روی فریم اول اعمال می‌شود.
-4. خروجی مدل در همه فریم‌ها دریافت می‌شود.
-5. برای هر فریم:
-   - ماسک استخراج می‌شود،
-   - centroid محاسبه می‌شود،
-   - bounding box به دست می‌آید،
-   - روی فریم رسم می‌شود.
-6. در نهایت:
-   - ویدئوی خروجی ذخیره می‌شود،
-   - GIF ساخته می‌شود،
-   - نمودار مسیر حرکت ذخیره می‌شود.
+This project demonstrates Open Vocabulary Video Object Tracking using Meta's Segment Anything Model 3 (SAM3).
 
-## پیش‌نیازها
-بر اساس ریپازیتوری رسمی SAM 3:
-- Python 3.12 یا بالاتر
-- PyTorch 2.7 یا بالاتر
-- CUDA 12.6 یا بالاتر
-- دسترسی به checkpointهای رسمی روی Hugging Face
+Unlike traditional object tracking algorithms, SAM3 can track arbitrary objects using only a natural language prompt.
 
-برای استفاده در Colab باید توجه کرد که:
-- برخی runtimeهای Colab ممکن است دقیقاً با پیش‌نیاز رسمی هم‌خوان نباشند،
-- در صورت عدم سازگاری، اجرای محلی روی GPU با Python 3.12 پایدارتر است.
+Example:
 
-## ساختار خروجی
-پوشه خروجی شامل این فایل‌ها خواهد بود:
-- `output_overlay.mp4`
-- `output_overlay.gif`
-- `trajectory_xy.png`
-- `trajectory_xy.csv`
+```
+person
+```
 
-## نکات عملی
-- اگر prompt متنی بیش از حد کلی باشد، بهتر است عبارت دقیق‌تر استفاده شود.
-- اگر هدف در فریم اول کامل دیده نمی‌شود، می‌توان prompt را روی فریم مناسب‌تری اعمال کرد.
-- اگر API نسخه نصب‌شده کمی با نسخه فعلی ریپو تفاوت جزئی داشته باشد، فقط بخش استخراج کلیدهای خروجی نیاز به تطبیق دارد.
-- برای بهترین نتیجه، ویدئوی کوتاه 5 ثانیه‌ای با شیء متحرک واضح و پس‌زمینه نسبتاً ساده انتخاب شود.
+or
 
-## خروجی مورد انتظار برای تحویل
-- نوت‌بوک Colab
-- فایل README
-- فایل ویدئوی رندرشده
-- فایل GIF
-- نمودار مسیر حرکت
-- کد پایتون
+```
+electric guitar
+```
 
-## جمع‌بندی
-این پروژه یک نمونه کامل از **open-vocabulary video tracking** است که با یک عبارت متنی ساده، هدف متحرک را در ویدئو segment و track می‌کند.  
-مزیت اصلی SAM 3 در این سناریو، حذف نیاز به آموزش مجدد و استفاده مستقیم از مفهوم متنی به عنوان پرامپت است.
+or
+
+```
+microphone
+```
+
+The model automatically:
+
+- detects the target
+- segments it
+- tracks it
+- computes the centroid
+- exports trajectory
+- generates visualization
+
+---
+
+# Outputs
+
+After execution the following files are generated.
+
+```
+output.mp4
+output.gif
+trajectory.csv
+trajectory.png
+statistics.txt
+```
+
+---
+
+# Pipeline
+
+```
+Video
+
+↓
+
+Text Prompt
+
+↓
+
+SAM3
+
+↓
+
+Segmentation Mask
+
+↓
+
+Bounding Box
+
+↓
+
+Centroid
+
+↓
+
+Trajectory
+
+↓
+
+Output Video
+```
+
+---
+
+# Features
+
+✅ Open Vocabulary Tracking
+
+✅ Text Prompt
+
+✅ Video Segmentation
+
+✅ Centroid Extraction
+
+✅ CSV Export
+
+✅ Trajectory Visualization
+
+✅ MP4 Rendering
+
+✅ GIF Rendering
+
+---
+
+# Repository Structure
+
+```
+input/
+
+outputs/
+
+checkpoints/
+
+src/
+
+notebook/
+```
+
+---
+
+# Installation
+
+Clone repository
+
+```bash
+git clone https://github.com/USERNAME/SAM3-OpenVocabulary-Tracking.git
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Download checkpoint
+
+```
+ModelScope
+```
+
+or
+
+```
+HuggingFace
+```
+
+Run notebook
+
+```
+SAM3_OpenVocabulary_Tracking.ipynb
+```
+
+---
+
+# Example
+
+Input
+
+```
+5-second concert video
+```
+
+Prompt
+
+```
+person
+```
+
+Outputs
+
+```
+output.mp4
+
+trajectory.csv
+
+trajectory.png
+
+output.gif
+```
+
+---
+
+# Centroid Computation
+
+Centroid is computed using image moments
+
+\[
+c_x=\frac{m_{10}}{m_{00}}
+\]
+
+\[
+c_y=\frac{m_{01}}{m_{00}}
+\]
+
+If the segmented area becomes too small, the center of the bounding box is used as a fallback.
+
+---
+
+# Statistics
+
+The notebook reports
+
+- tracked frames
+
+- tracking success rate
+
+- total trajectory length
+
+- average object speed
+
+---
+
+# Results
+
+The generated output video contains
+
+- segmentation mask
+
+- object boundary
+
+- centroid
+
+- bounding box
+
+- trajectory
+
+- frame number
+
+- confidence score
+
+---
+
+# Technologies
+
+Python
+
+PyTorch
+
+OpenCV
+
+NumPy
+
+Pandas
+
+Matplotlib
+
+Google Colab
+
+SAM3
+
+---
+
+# References
+
+Meta AI — Segment Anything Model 3
+
+OpenCV Documentation
+
+PyTorch Documentation
+
+---
+
+# Author
+
+Mohammad Amin Kiani
+
+M.Sc. Artificial Intelligence
+
+University of Isfahan
