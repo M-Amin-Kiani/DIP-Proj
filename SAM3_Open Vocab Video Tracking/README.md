@@ -1,15 +1,12 @@
 # 🎯 Open Vocabulary Video Tracking using SAM3
 
 > Final Project for Digital Image Processing (M.Sc. Artificial Intelligence)
-<div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.7+-red.svg)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)
 ![Google Colab](https://img.shields.io/badge/Google-Colab-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-success.svg)
-
-</div>
 
 ---
 
