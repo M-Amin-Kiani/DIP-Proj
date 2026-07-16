@@ -135,7 +135,7 @@ notebook/
 Clone repository
 
 ```bash
-git clone https://github.com/USERNAME/SAM3-OpenVocabulary-Tracking.git
+git clone https://github.com/M-Amin-Kiani/SAM3_Open Vocab Video Tracking.git
 ```
 
 Install dependencies
