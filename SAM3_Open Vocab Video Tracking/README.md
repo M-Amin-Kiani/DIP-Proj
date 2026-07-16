@@ -6,7 +6,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.7+-red.svg)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)
 ![Google Colab](https://img.shields.io/badge/Google-Colab-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-success.svg)
+![License](https://img.shields.io/badge/License-UI-success.svg)
 
 ---
 
