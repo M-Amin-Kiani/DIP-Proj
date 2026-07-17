@@ -19,7 +19,7 @@ Unlike traditional object tracking algorithms, SAM3 can track arbitrary objects 
 Example:
 
 ```
-Lead Singer
+Lead Singer(Serj Tankian)
 ```
 
 or
@@ -117,15 +117,10 @@ Output Video
 # Repository Structure
 
 ```
-input/
+doc/WhatToDo, My Reports
 
-outputs/
+code/IN, Model(OnColab), OUT/Toxicity, .ipynb
 
-checkpoints/
-
-src/
-
-notebook/
 ```
 
 ---
@@ -141,7 +136,7 @@ git clone https://github.com/M-Amin-Kiani/DIP-Proj/SAM3_Open Vocab Video Trackin
 Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt or Run The Cell_1 in .ipynb
 ```
 
 Download checkpoint
@@ -175,7 +170,7 @@ Input
 Prompt
 
 ```
-person
+Lead Singer
 ```
 
 Outputs
@@ -274,7 +269,7 @@ PyTorch Documentation
 
 # Author
 
-Mohammad Amin Kiani
+Mohammad Amin Kiani 4043644008
 
 M.Sc. Artificial Intelligence
 
