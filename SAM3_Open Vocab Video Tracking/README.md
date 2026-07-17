@@ -19,7 +19,7 @@ Unlike traditional object tracking algorithms, SAM3 can track arbitrary objects 
 Example:
 
 ```
-person
+Lead Singer
 ```
 
 or
