@@ -8,6 +8,8 @@
 ![Google Colab](https://img.shields.io/badge/Google-Colab-orange.svg)
 ![License](https://img.shields.io/badge/License-UI-success.svg)
 
+<img width="1256" height="879" alt="Screenshot 2026-07-17 194611" src="https://github.com/user-attachments/assets/f9624b44-0b07-4775-b9d0-e5334e81dbc0" />
+
 ---
 
 ## Overview
