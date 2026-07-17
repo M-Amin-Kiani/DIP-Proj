@@ -291,8 +291,6 @@ University of Isfahan
 ![Google Colab](https://img.shields.io/badge/Google-Colab-orange.svg)
 ![License](https://img.shields.io/badge/License-ui.ac.ir-success.svg)
 
-پروژه نهایی درس **پردازش تصویر دیجیتال**
-
 مقطع کارشناسی ارشد مهندسی هوش مصنوعی
 
 </div>
@@ -362,8 +360,7 @@ outputs/
 ├── output.mp4
 ├── output.gif
 ├── trajectory.csv
-├── trajectory.png
-└── statistics.txt
+└── trajectory.png
 ```
 
 ---
@@ -375,23 +372,15 @@ SAM3-OpenVocabulary-Tracking/
 
 │
 ├── README.md
-├── requirements.txt
-├── notebook/
-│      └── SAM3_OpenVocabulary_Tracking.ipynb
+├── code/
+│      └── IN/Music, Child, Serj Tankian, ....
+│      └── Model(OnColab)/checkpoints downloaded...
+│      └── OUT/Toxicity/
+│      └── proj_mohammadaminkiani_4043644008_sam3.ipynb & .py
 │
-├── checkpoints/
-│
-├── input/
-│      └── input_video.mp4
-│
-├── outputs/
-│      ├── output.mp4
-│      ├── output.gif
-│      ├── trajectory.csv
-│      ├── trajectory.png
-│      └── statistics.txt
-│
-└── figures/
+└── doc/
+      └── WhatToDo/ My References
+      └── My .pdf & .docx reports
 ```
 
 ---
