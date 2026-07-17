@@ -747,7 +747,7 @@ handle_stream_request()
 propagate_in_video
 ```
 
-استفاده کنید. این تغییرات در نسخه‌های جدید پروژه رسمی نیز اعمال شده‌اند. :contentReference[oaicite:3]{index=3}
+استفاده کنید. این تغییرات در نسخه‌های جدید پروژه رسمی نیز اعمال شده‌اند.
 
 ---
 
@@ -767,8 +767,6 @@ propagate_in_video
 
 # 📚 منابع
 
-- :contentReference[oaicite:4]{index=4}
-- :contentReference[oaicite:5]{index=5}
 - OpenCV Documentation
 - PyTorch Documentation
 
